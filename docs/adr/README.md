@@ -11,10 +11,10 @@ Items marked ⚠ are expensive to reverse: decide them first.
  
 | ADR | Question | Status |
 | --- | --- | --- |
-| 0001 ⚠ | How is the core distributed? | Pending |
-| 0002 | How is the monorepo organized? | Pending |
-| 0003 ⚠ | Where does the service layer end? | Pending |
-| 0018 ⚠ | What stays out of the core? | Pending |
+| 0001 ⚠ | How is the core distributed? | Accepted |
+| 0002 | How is the monorepo organized? | Accepted |
+| 0003 ⚠ | Where does the service layer end? | Accepted |
+| 0018 ⚠ | What stays out of the core? | Accepted |
  
 **0001 — Distribution.**
 - *Copy-once template:* simple, but every copy diverges and never receives security fixes.
