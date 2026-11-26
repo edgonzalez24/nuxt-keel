@@ -34,12 +34,12 @@ Items marked ⚠ are expensive to reverse: decide them first.
  
 | ADR | Question | Status |
 | --- | --- | --- |
-| 0004 ⚠ | How is the GraphQL schema built? | Pending |
-| 0005 | Where and how is input validated? | Pending |
-| 0006 ⚠ | What is the error model? | Pending |
-| 0007 | How are auth and sessions configured? | Pending |
-| 0008 | Where does authorization live? | Pending |
-| 0009 ⚠ | Is there multi-tenancy, and how? | Pending |
+| 0004 ⚠ | How is the GraphQL schema built? | Accepted |
+| 0005 | Where and how is input validated? | Accepted |
+| 0006 ⚠ | What is the error model? | Accepted |
+| 0007 | How are auth and sessions configured? | Accepted |
+| 0008 | Where does authorization live? | Accepted |
+| 0009 ⚠ | Is there multi-tenancy, and how? | Accepted |
  
 **0004 — GraphQL.**
 - *Pothos Prisma plugin:* very fast to write, but couples the public API to the shape of your tables.
