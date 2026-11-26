@@ -61,16 +61,16 @@ Items marked ⚠ are expensive to reverse: decide them first.
  
 | ADR | Question | Status |
 | --- | --- | --- |
-| 0010 | What is the HTTP security policy? | Pending |
-| 0011 ⚠ | How does rate limiting work? | Pending |
-| 0012 | What does the storage interface look like? | Pending |
-| 0013 | Does the core include background jobs? | Pending |
-| 0014 | How are tests run against the database? | Pending |
-| 0015 | What observability ships by default? | Pending |
-| 0016 | How is configuration validated? | Pending |
-| 0017 | How is it deployed and migrated? | Pending |
-| 0019 | License and versioning? | Pending |
-| 0020 | What is the repo's contract with agents? | Pending |
+| 0010 | What is the HTTP security policy? | Accepted |
+| 0011 ⚠ | How does rate limiting work? | Accepted |
+| 0012 | What does the storage interface look like? | Accepted |
+| 0013 | Does the core include background jobs? | Accepted |
+| 0014 | How are tests run against the database? | Accepted |
+| 0015 | What observability ships by default? | Accepted |
+| 0016 | How is configuration validated? | Accepted |
+| 0017 | How is it deployed and migrated? | Accepted |
+| 0019 | License and versioning? | Accepted |
+| 0020 | What is the repo's contract with agents? | Accepted |
  
 **0010 — HTTP security.** CSP with nonces or hashes (and how it coexists with Nuxt SSR and hydration). Origin validation for mutations only or for everything. Default header list.
  
