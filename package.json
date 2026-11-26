@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-keel-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter ./apps/starter dev",
+    "check": "pnpm --filter ./layers/core check",
+    "test": "pnpm --filter ./layers/core test",
+    "typecheck": "pnpm --filter ./layers/core typecheck",
+    "build": "pnpm --filter ./apps/starter build",
+    "db:migrate:dev": "pnpm --filter ./layers/core db:migrate:dev",
+    "db:generate": "pnpm --filter ./layers/core db:generate",
+    "db:reset": "pnpm --filter ./layers/core db:reset",
+    "graphql:schema": "pnpm --filter ./layers/core graphql:schema"
+  }
+}

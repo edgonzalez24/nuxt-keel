@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Nuxt build output
+.nuxt/
+.output/
+.cache/
+
+# Local data (storage adapter, SQLite)
+.data/
+
+# Build artifacts
+dist/
+
+# Environment variables — never commit
+.env
+.env.*
+!.env.example
+
+# pnpm
+.pnpm-store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
