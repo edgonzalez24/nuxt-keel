@@ -44,7 +44,7 @@ Update communication: GitHub Releases with changelogs; opt-in Dependabot for con
 ## Consequences
 
 - Production projects install with `pnpm add @edgonzalez24/nuxt-keel` and declare `extends: ['@edgonzalez24/nuxt-keel']` in `nuxt.config`.
-- `apps/starter/` uses a workspace path reference (`../../layers/core`) during development, before publishing.
+- `apps/starter/` references the layer via `"@edgonzalez24/nuxt-keel": "workspace:*"` in `package.json` during development. pnpm resolves this to the local `layers/core/` without publishing.
 - `layers/core/package.json` is the publishable artefact; its `name` field is `@edgonzalez24/nuxt-keel`.
 - A security fix reaches consumers when they run `pnpm update @edgonzalez24/nuxt-keel`.
 - Adding a new field to module options is always backwards-compatible (pre-1.0 or not). Removing or renaming one is a breaking change requiring a minor bump while in `0.x`.
