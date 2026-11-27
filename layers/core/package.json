@@ -4,9 +4,11 @@
   "type": "module",
   "main": "./nuxt.config.ts",
   "exports": {
-    ".": "./nuxt.config.ts"
+    ".": "./nuxt.config.ts",
+    "./server": "./server/index.ts"
   },
   "scripts": {
+    "prepare": "prisma generate",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck",
     "test": "vitest run",
@@ -14,8 +16,10 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "latest",
+    "@prisma/client": "^7.10.1",
     "eslint": "latest",
     "nuxt": "latest",
+    "prisma": "7.10.1",
     "typescript": "~5.8.3",
     "vitest": "latest",
     "vue": "latest",
