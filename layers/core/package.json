@@ -8,6 +8,7 @@
     "./server": "./server/index.ts"
   },
   "scripts": {
+    "prepare": "prisma generate",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck",
     "test": "vitest run",
